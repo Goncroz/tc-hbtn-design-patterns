@@ -7,7 +7,7 @@ public class Guerreiro extends Personagem{
 
     public Guerreiro(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         super(  nome,
-                tipo,
+                tipo = TipoPersonagem.GUERREIRO,
                 inteligencia,
                 forca,
                 vigor,

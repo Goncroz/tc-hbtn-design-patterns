@@ -7,7 +7,7 @@ public class Mago extends Personagem{
 
     public Mago(String nome, TipoPersonagem tipo,int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         super(  nome,
-                tipo,
+                tipo = TipoPersonagem.MAGO,
                 inteligencia,
                 forca,
                 vigor,

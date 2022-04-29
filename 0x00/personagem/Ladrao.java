@@ -5,7 +5,7 @@ public class Ladrao extends Personagem{
     }
     public Ladrao(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         super(  nome,
-                tipo,
+                tipo = TipoPersonagem.LADRAO,
                 inteligencia,
                 forca,
                 vigor,
