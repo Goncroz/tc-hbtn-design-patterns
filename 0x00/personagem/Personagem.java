@@ -84,8 +84,8 @@ abstract class Personagem {
 
     @Override
     public String toString() {
-        return "Personagem { " +
-                " nome = " + nome + 
+        return "Personagem {  " +
+                " nome = " + nome +
                 ", tipo = " + tipo +
                 ", inteligencia = " + inteligencia +
                 ", forca = " + forca +
