@@ -3,9 +3,9 @@ public class Director {
         builder.setNome("Guerreiro");
         builder.setTipo(TipoPersonagem.GUERREIRO);
         builder.setInteligencia(1);
-        builder.setForca(8);
+        builder.setForca(5);
         builder.setDestreza(6);
-        builder.setVigor(5);
+        builder.setVigor(8);
         builder.setResistencia(10);
 
     }
@@ -14,9 +14,9 @@ public class Director {
         builder.setNome("Ladrao");
         builder.setTipo(TipoPersonagem.LADRAO);
         builder.setInteligencia(2);
-        builder.setForca(6);
+        builder.setForca(8);
         builder.setDestreza(10);
-        builder.setVigor(8);
+        builder.setVigor(6);
         builder.setResistencia(5);
     }
 
@@ -24,9 +24,9 @@ public class Director {
         builder.setNome("Mago");
         builder.setTipo(TipoPersonagem.MAGO);
         builder.setInteligencia(10);
-        builder.setForca(2);
+        builder.setForca(5);
         builder.setDestreza(4);
-        builder.setVigor(5);
+        builder.setVigor(2);
         builder.setResistencia(3);
     }
 }
