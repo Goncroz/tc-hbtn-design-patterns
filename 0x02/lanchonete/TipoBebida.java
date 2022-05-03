@@ -1,3 +1,3 @@
 public enum TipoBebida {
-    SUCO, GUARANA, COCA_COLA
+    SUCO, GUARANA, COCA_COLA;
 }

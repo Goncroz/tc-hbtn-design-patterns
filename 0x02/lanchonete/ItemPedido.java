@@ -1,13 +1,15 @@
 public class ItemPedido {
+
     private TipoItemPedido tipo;
     private String nome;
 
-    public ItemPedido(TipoItemPedido tipo, String nome) {
-        this.tipo = tipo;
-        this.nome = nome;
+
+    public ItemPedido(TipoItemPedido bebida, String name) {
+        this.tipo = bebida;
+        this.nome = name;
     }
 
-    public ItemPedido() {
+    public ItemPedido(){
     }
 
     public TipoItemPedido getTipo() {
@@ -26,3 +28,4 @@ public class ItemPedido {
         this.nome = nome;
     }
 }
+

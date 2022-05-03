@@ -1,3 +1,3 @@
 public enum TipoBrinde {
-    CARRO, BONECA
+    CARRO, BONECA;
 }

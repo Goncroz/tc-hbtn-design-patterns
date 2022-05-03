@@ -1,8 +1,12 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
+
         PedidoBuilder builder1 = new PedidoBuilder();
 
-        builder1.setBatata(TamanhoBatata.GRANDE1);
+        builder1.setBatata(TamanhoBatata.GRANDE);
         builder1.setBebida(TipoBebida.COCA_COLA);
         builder1.setBrinde(TipoBrinde.CARRO);
         builder1.setLanche(TipoLanche.CHEESEBURGUER);
