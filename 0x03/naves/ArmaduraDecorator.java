@@ -1,6 +1,6 @@
 public class ArmaduraDecorator extends NaveEspacialDecorator{
-    public ArmaduraDecorator(NaveEspacial naveEspacial) {
-        super(naveEspacial);
+    public ArmaduraDecorator(NaveEspacial naveDecorada) {
+        super(naveDecorada);
     }
 
     @Override
