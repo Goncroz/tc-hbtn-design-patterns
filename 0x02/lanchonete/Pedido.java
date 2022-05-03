@@ -9,17 +9,17 @@ public class Pedido {
             ItemPedido bebida = new ItemPedido(TipoItemPedido.BEBIDA, tipoBebida.name());
             adicionarItemForaCaixa(bebida);
         }
-        if (tipoLanche != null) {
-            ItemPedido lanche = new ItemPedido(TipoItemPedido.LANCHE, tipoLanche.name());
-            adicionarItemDentroCaixa(lanche);
+        if (tamanhoBatata != null) {
+            ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
+            adicionarItemDentroCaixa(batata);
         }
         if (tipoBrinde != null) {
             ItemPedido brinde = new ItemPedido(TipoItemPedido.BRINDE, tipoBrinde.name());
             adicionarItemDentroCaixa(brinde);
         }
-        if (tamanhoBatata != null) {
-            ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
-            adicionarItemDentroCaixa(batata);
+        if (tipoLanche != null) {
+            ItemPedido lanche = new ItemPedido(TipoItemPedido.LANCHE, tipoLanche.name());
+            adicionarItemDentroCaixa(lanche);
         }
     }
 
@@ -36,13 +36,13 @@ public class Pedido {
         this.itensForaCaixa = itensForaCaixa;
     }
 
-    public HashSet<ItemPedido> getItensDentroCaixa() {
-        return itensDentroCaixa;
-    }
-
-    public HashSet<ItemPedido> getItensForaCaixa() {
-        return itensForaCaixa;
-    }
+//    public HashSet<ItemPedido> getItensDentroCaixa() {
+//        return itensDentroCaixa;
+//    }
+//
+//    public HashSet<ItemPedido> getItensForaCaixa() {
+//        return itensForaCaixa;
+//    }
 
     @Override
     public String toString() {
