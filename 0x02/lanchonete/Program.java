@@ -2,7 +2,7 @@ public class Program {
     public static void main(String[] args) {
         PedidoBuilder builder1 = new PedidoBuilder();
 
-        builder1.setBatata(TamanhoBatata.GRANDE);
+        builder1.setBatata(TamanhoBatata.GRANDE1);
         builder1.setBebida(TipoBebida.COCA_COLA);
         builder1.setBrinde(TipoBrinde.CARRO);
         builder1.setLanche(TipoLanche.CHEESEBURGUER);

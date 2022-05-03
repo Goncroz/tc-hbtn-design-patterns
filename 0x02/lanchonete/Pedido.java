@@ -5,7 +5,7 @@ public class Pedido {
     private HashSet<ItemPedido> itensDentroCaixa = new HashSet<>();
     private HashSet<ItemPedido> itensForaCaixa = new HashSet<>();
 
-        public Pedido(TipoLanche tipoLanche, TamanhoBatata tamanhoBatata, TipoBrinde tipoBrinde, TipoBebida tipoBebida) {
+    public Pedido(TipoLanche tipoLanche, TamanhoBatata tamanhoBatata, TipoBrinde tipoBrinde, TipoBebida tipoBebida) {
         if (tipoBebida != null) {
             ItemPedido bebida = new ItemPedido(TipoItemPedido.BEBIDA, tipoBebida.name());
             adicionarItemForaCaixa(bebida);
