@@ -1,6 +1,7 @@
 import java.util.HashSet;
 
 public class Pedido {
+    /*Essa classe alinha a saída*/
     private HashSet<ItemPedido> itensDentroCaixa = new HashSet<>();
     private HashSet<ItemPedido> itensForaCaixa = new HashSet<>();
 
