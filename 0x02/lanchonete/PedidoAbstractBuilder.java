@@ -1,15 +1,7 @@
 public abstract class PedidoAbstractBuilder {
-    void setLanche(TipoLanche tipo) {
-
-    }
-    void setBatata(TamanhoBatata tamanho){
-
-    }
-    void setBrinde(TipoBrinde tipo){
-
-    }
-    void setBebida(TipoBebida tipo){
-
-    }
+    abstract void setLanche(TipoLanche tipo);
+    abstract void setBatata(TamanhoBatata tamanho);
+    abstract void setBrinde(TipoBrinde tipo);
+    abstract void setBebida(TipoBebida tipo);
 
 }

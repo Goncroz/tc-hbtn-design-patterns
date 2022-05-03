@@ -1,37 +1,36 @@
 public class PedidoBuilder extends PedidoAbstractBuilder {
+
     private Pedido pedido;
-    private ItemPedido itemPedido = new ItemPedido();
+    ItemPedido itemPedido;
+    TipoLanche tipoLanche;
+    TipoItemPedido tipoItemPedido;
+    TamanhoBatata tamanhoBatata;
+    TipoBrinde tipoBrinde;
+    TipoBebida tipoBebida;
 
     @Override
-    void setLanche(TipoLanche tipo) {
-        itemPedido.setTipo(TipoItemPedido.LANCHE);
-        itemPedido.setNome(tipo.name());
-        pedido.adicionarItemDentroCaixa(itemPedido);
+    public void setLanche(TipoLanche tipo) {
+        tipoLanche = tipo;
     }
 
     @Override
-    void setBatata(TamanhoBatata tamanho) {
-        itemPedido.setTipo(TipoItemPedido.BATATA);
-        itemPedido.setNome(tamanho.name());
-        pedido.adicionarItemDentroCaixa(itemPedido);
+    public void setBatata(TamanhoBatata tamanho) {
+        tamanhoBatata = tamanho;
     }
 
     @Override
-    void setBrinde(TipoBrinde tipo) {
-        itemPedido.setTipo(TipoItemPedido.BRINDE);
-        itemPedido.setNome(tipo.name());
-        pedido.adicionarItemDentroCaixa(itemPedido);
+    public void setBrinde(TipoBrinde tipo) {
+        tipoBrinde = tipo;
     }
 
     @Override
-    void setBebida(TipoBebida tipo) {
-        itemPedido.setTipo(TipoItemPedido.BRINDE);
-        itemPedido.setNome(tipo.name());
-        pedido.adicionarItemForaCaixa(itemPedido);
+    public void setBebida(TipoBebida tipo) {
+        tipoBebida = tipo;
     }
 
     public Pedido build(){
-        return pedido;
+
+        return new Pedido(tipoLanche, tamanhoBatata, tipoBrinde, tipoBebida);
     }
 
 }
