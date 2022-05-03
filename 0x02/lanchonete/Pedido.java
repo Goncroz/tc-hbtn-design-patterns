@@ -4,23 +4,43 @@ public class Pedido {
     private HashSet<ItemPedido> itensDentroCaixa = new HashSet<>();
     private HashSet<ItemPedido> itensForaCaixa = new HashSet<>();
 
-    public Pedido(TipoLanche tipoLanche, TamanhoBatata tamanhoBatata, TipoBrinde tipoBrinde, TipoBebida tipoBebida) {
-        if (tipoBebida != null) {
-            ItemPedido bebida = new ItemPedido(TipoItemPedido.BEBIDA, tipoBebida.name());
-            adicionarItemForaCaixa(bebida);
-        }
-        if (tamanhoBatata != null) {
-            ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
-            adicionarItemDentroCaixa(batata);
-        }
+   public Pedido(TipoBebida tipoBebida, TipoBrinde tipoBrinde, TamanhoBatata tamanhoBatata, TipoLanche tipoLanche) {
+
+
+
+
         if (tipoBrinde != null) {
+
             ItemPedido brinde = new ItemPedido(TipoItemPedido.BRINDE, tipoBrinde.name());
+
             adicionarItemDentroCaixa(brinde);
+
         }
+
+        if (tamanhoBatata != null) {
+
+            ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
+
+            adicionarItemDentroCaixa(batata);
+
+        }
+
         if (tipoLanche != null) {
+
             ItemPedido lanche = new ItemPedido(TipoItemPedido.LANCHE, tipoLanche.name());
+
             adicionarItemDentroCaixa(lanche);
+
         }
+
+        if (tipoBebida != null) {
+
+            ItemPedido bebida = new ItemPedido(TipoItemPedido.BEBIDA, tipoBebida.name());
+
+            adicionarItemForaCaixa(bebida);
+
+        }
+
     }
 
     public void adicionarItemDentroCaixa(ItemPedido item) {
