@@ -4,11 +4,6 @@ public class Pedido {
     private HashSet<ItemPedido> itensDentroCaixa = new HashSet<>();
     private HashSet<ItemPedido> itensForaCaixa = new HashSet<>();
 
-   public Pedido(TipoBebida tipoBebida, TipoBrinde tipoBrinde, TamanhoBatata tamanhoBatata, TipoLanche tipoLanche) {
-
-
-
-
         public Pedido(TipoLanche tipoLanche, TamanhoBatata tamanhoBatata, TipoBrinde tipoBrinde, TipoBebida tipoBebida) {
         if (tipoBebida != null) {
             ItemPedido bebida = new ItemPedido(TipoItemPedido.BEBIDA, tipoBebida.name());
